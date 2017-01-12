@@ -1,0 +1,95 @@
+
+header {
+	background-image: 
+
+}
+
+#aloha-logo {
+	float-left;
+	height:90px;
+	padding:15px;	
+}
+
+
+ #shopping-cart{
+ 	float:  right;
+ 	padding:15px;
+ 	margin-left:15px;
+ }
+
+ 
+ 	.background-image {
+ 		clear: both;
+ 		background-image: url("assets/images/flower-bkgd.jpg");
+ 		background-size: 90%;
+ 		background-repeat: no repeat;
+ 		min-height: 60vh;
+ 		position: relative;
+
+ 	}
+
+ 	#bannergirl {
+ 		position: absolute;
+ 		background-position: top;
+ 		bottom: 0%; left: 50%;
+ 		width: 20%;
+ 		background-size: cover;
+ 		background-repeat: no-repeat;
+ 		margin-left: 10%;
+ 		background-image: url("assets/images/banner-girl.png");
+ 		position: center;
+ 		z-index: 1;
+ 		height: 90%;
+ 		padding-left: 400px; 
+ 		
+ 		 
+
+	}
+	#banner-text {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		z-index: 3
+		top: 40%
+		color: white;
+		text-shadow: 1px 1px #999999;
+	
+	}
+
+	#new-collecgtion {
+		font-size: 20px;
+		text-shadow: uppercase;
+		margin-bottom: 1px 1px #999999;
+		font-family: Raleway;
+	
+	}	
+	
+
+	#spring-summer {
+		font-size:150px;
+		text-shadow: ;
+		margin-bottom: 3px;
+		font-family: Raleway; 
+
+	}
+
+	
+	#about {
+		font-size: ;
+	text-shadow: ;
+	margin-bottom: ;
+	font-family: ;	
+	}
+	
+
+	}
+
+	#Hand-Crafted-Styles {
+		font-size: 60px;
+		text-shadow: ;
+		margin-bottom: 2px;
+		font-family: Raleway;
+	}
+
+
+
