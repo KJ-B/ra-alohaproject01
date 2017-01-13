@@ -19,8 +19,8 @@
 
 #aloha-logo {
 	float: left;
-	
 	margin-left: 15px;
+	padding: 15px;
 }
 
 
@@ -30,7 +30,6 @@
  	margin-right:15px;
 
  }
-
  
  	.background-image {
  		clear: both;
@@ -53,20 +52,23 @@
  		background-image: url("assets/images/banner-girl.png");
  		position: center;
  		/*z-index: 1;*/
- 		height: 90%;
+ 		height: 85%;
  		padding-left: 10px; 
  		
  		 
 
 	}
-	#banner-text {
+	
+	.banner-text {
 		position: absolute;
 		width: 100%;
 		text-align: center;
-		z-index: 3
-		top: 25%
+		z-index: 3;
+		top: 25%;
 		color: white;
 		text-shadow: 1px 1px #999999;
+
+	
 
 		
 	}
@@ -74,33 +76,54 @@
 	h5 {
 	color: white;
 	font-family: 'Playfair', sans-serif;
-	font-size:x 40px;
-	line-height: 75px;
+	font-size:x 100 px;
+	line-height: 50px;
+	position: relative;
+
+
+
 		
 }
 
+	h1 {
+
+  	color: white;
+  	font-family: 'Raleway', serif;
+  	font-size: 500 px;
+  	line-height: 76px;
+  	margin: 0;
+  	width: 60%
+  	position: relative;
+  	text-align: center;
+  	top: 20%;
+}
 
 	.new-collection {
-		float: right;
 		color: white;
 		font-size: 300%;
 		top:45%;
-		width: 50%
+		width: 60%
 		text-shadow: uppercase;
-		margin-bottom: 50px 50px #999999;
-		font-family: 'Playfair', 
-		
+		bottom: 40%
+		font-family: 'Playfair';
+		text-align : center;
+		max-height: 75%
+		line-height: 75px;
+		text-decoration-style: solid;
+	
 	
 	}	
-	
 
 	.spring-summer {
-		font-size: 300px;
+		
+		font-size: 500%;
 		text-shadow:  uppercase;
-		margin-bottom: 3px;
-		font-family: Raleway; 
+		margin-bottom: 30%;
+		 
 
 	}
+
+
  
 	.banner-title {
 
@@ -108,13 +131,47 @@
 		width: 100px;
 	}
 
-	
-	#about-text {
-		font-size: ;
-	text-shadow: ;
+	.hand-crafted styles: {
+		font-family: 'Raleway' (300i);
+	}
+
+
+	.products: {
+
+
+	}
+
+	.signup {
+
+ 		clear: both;
+ 		background-image: url("assets/images/wave-bkgd.jpg");
+ 		background-size: cover;
+ 		background-repeat: no repeat;
+ 		min-height: 35vh;
+ 		position: relative;
+ 		top: 65%;
+ 		color: white;
+ 		padding-top: 15%;
+ 		padding-bottom: 15%;
+ 		padding-left: 5%;
+ 		padding-right: 5%
+ 		width: 90%;
+ 	}
+
+
+	.about {
+		font-size:  ;
 	margin-bottom: ;
-	font-family: ;	
+		%
 	}
 	
+
+	.footer {
+		background-color: black;
+		text-orientation:  
+
+
+	}
+
 
 		
