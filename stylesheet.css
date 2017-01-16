@@ -16,11 +16,18 @@
 .width	{width: 25%;}
 .textcenter	{text-align: center;}
 
+.header {
+	margin: 15px;
+	margin-bottom: 25px;
+}
+
 
 #aloha-logo {
 	float: left;
 	margin-left: 15px;
-	padding: 15px;
+	padding-bottom: 20px;
+	padding: 20px;
+
 }
 
 
@@ -31,20 +38,19 @@
 
  }
  
- 	.background-image {
+ .background-image {
  		clear: both;
- 		background-image: url("assets/images/flower-bkgd.jpg");
+ 		background-image: url("assets/images/flower-bkgd.jpg"); 
  		background-size: 90%;
  		background-repeat: no repeat;
  		min-height: 60vh;
  		position: relative;
+ }
 
- 	}
 
- 	#bannergirl {
- 		position: absolute;
- 		background-position: top;
- 		bottom: 10%; left: 50%;
+ #bannergirl {
+ 		position: absolute;	
+ 		bottom: 0%; left: 50%;
  		width: 20%;
  		background-size: cover;
  		background-repeat: no-repeat;
@@ -52,64 +58,57 @@
  		background-image: url("assets/images/banner-girl.png");
  		position: center;
  		/*z-index: 1;*/
- 		height: 85%;
- 		padding-left: 10px; 
- 		
- 		 
-
+ 		height: 90%; 
+ 		margin-bottom: 0px;	
 	}
 	
+
 	.banner-text {
 		position: absolute;
 		width: 100%;
 		text-align: center;
 		z-index: 3;
-		top: 25%;
+		margin-top: 25%;
+		margin-bottom: 2
 		color: white;
 		text-shadow: 1px 1px #999999;
-
-	
-
-		
 	}
+			
 
-	h5 {
+	h1 {
+
+  	font-family: 'Playfair', sans-serif;
+  	font-size: 10px;
+  	margin: 0;
+  	position: relative;
+  	text-align: center;
+  	
+}
+
+
+
+h5 {
 	color: white;
 	font-family: 'Playfair', sans-serif;
 	font-size:x 100 px;
 	line-height: 50px;
 	position: relative;
-
-
-
-		
-}
-
-	h1 {
-
-  	color: white;
-  	font-family: 'Raleway', serif;
-  	font-size: 500 px;
-  	line-height: 76px;
-  	margin: 0;
-  	width: 60%
-  	position: relative;
-  	text-align: center;
-  	top: 20%;
+	text-align: center;
 }
 
 	.new-collection {
 		color: white;
-		font-size: 300%;
-		top:45%;
-		width: 60%
-		text-shadow: uppercase;
-		bottom: 40%
-		font-family: 'Playfair';
-		text-align : center;
-		max-height: 75%
+		font-size: 200%;
+		padding-bottom: 
+		width: 60%;
+		text-shadow:uppercase;
+		bottom: 0%
+		text-align: center;
+		max-height: 100%;
 		line-height: 75px;
 		text-decoration-style: solid;
+		position: relative;
+		margin-bottom: 50%;
 	
 	
 	}	
@@ -123,6 +122,9 @@
 
 	}
 
+	.Hand-Crafted {
+		
+	}
 
  
 	.banner-title {
@@ -132,11 +134,13 @@
 	}
 
 	.hand-crafted styles: {
-		font-family: 'Raleway' (300i);
+		font-family: 'Raleway';
+
 	}
 
 
 	.products: {
+		background-image: url("");
 
 
 	}
@@ -168,7 +172,7 @@
 
 	.footer {
 		background-color: black;
-		text-orientation:  
+		font-family:  
 
 
 	}
