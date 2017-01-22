@@ -484,6 +484,7 @@ input[type="submit"] {
   font-weight: bold;
   padding: 0.25rem 1.5rem;
   position: absolute;
+  border: 0;z
   border-radius: 25px;
   right: 0.25rem;
   top: 0.25rem;
@@ -572,6 +573,8 @@ input[type="submit"]:focus {
 /*      <Header Declarations>      */
 
   .nav-menu {
+    margin-top: 0;
+    border: 0;
     order: 1;
     width: auto;
     align-self: center;

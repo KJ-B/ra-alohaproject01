@@ -108,9 +108,19 @@
 }
 
 html {
-  font-size: 16px(100.01%);
+  font-size: 16px(100.01%);/*16 pixels will render better on tablets and mobile*/
 }
 
+h2 {
+  font: 1.96875rem 'Playfair_Display', sans-serif;
+  font-style: italic;
+  
+}
+
+h2 span {
+  font-weight: bold;
+  font-style: normal;
+}
 
 /* for responsive scaling of images */
 img {
@@ -124,19 +134,7 @@ img {
   width: device-width;
 }
 
-h2 {
-  font: 2.25rem 'Playfair_Display', sans-serif;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 2.25rem;
-}
-
-h2 span {
-  font-weight: bold;
-  font-style: normal;
-}
-
-/*Class Cascades*/
+/*Cascades Section I*/
 
 .about {
   text-align: center;
@@ -145,19 +143,19 @@ h2 span {
 }
 
 .about h2 {
-  padding-bottom: 1.3125rem;
+  padding-bottom: 1.5rem;
 }
 
 .about p {
-  font-size: 1.00625rem;
-  line-height: 2.1875rem;
-  padding-bottom: 1.3125rem;
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .address {
-  line-height: 1.3125rem;
+  line-height: 1.5rem;
   color: #969696;
-  padding-bottom: 2.625rem;
+  padding-bottom: 3rem;
 }  
 
 .banner {
@@ -178,72 +176,17 @@ h2 span {
   width: 70%;
 }  
 
-.container {
-  padding: 0 2%;
-  width: 100%;
-}
-
-.screen-reader {
-  display: none;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
-
-.logo {
-  align-self: flex-start;
-  order: 1;
-  width: 120px;
-}
-
-.nav {
-  margin-top: 1rem;
-  border-top: 1px solid #d7d7d7;
-  font-weight: bold;
-  order: 3;
-  padding-top: 1rem;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-.nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #e2574c;
-  padding: 0 0.5rem;
-  align-self: center;
-}
-
-.nav a:hover {
-  color: #b64036;
-}
-
 .cart {
   align-self: flex-end;
   order: 2;
   width: 50px;
 }
 
-/*      <Banner Declarations>      */
-
-
+.container {
+  padding: 0 2%;
+  width: 100%;
 }
 
-.collection {
-  font: bold 1.09375rem'Raleway', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 1.3123rem;
-}
-
-.seasons {
-  font-family: 2.1875rem 'Playfair_Display', sans-serif;
-}
 
 .category {
   display: flex;
@@ -292,6 +235,61 @@ h2 span {
   color: #f5ebc6;
 }
 
+.collection {
+  font: bold 1.09375rem'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+
+.copyright {
+  padding: 4rem 0 1.5rem;
+  line-height: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  align-self: flex-start;
+  order: 1;
+  width: 120px;
+}
+
+.nav {
+  margin-top: 1rem;
+  border-top: 1px solid #d7d7d7;
+  font-weight: bold;
+  order: 3;
+  padding-top: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e2574c;
+  padding: 0 0.5rem;
+  align-self: center;
+}
+
+.nav a:hover {
+  color: #b64036;
+}
+
+/*Cascades Section II (Sliders & Product Roll)*/
+
+.seasons {
+  font-family: 2.1875rem 'Playfair_Display', sans-serif;
+}
+
 .bags, .glasses, .sale, .trends, .womens, {
   background:
         linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
@@ -300,23 +298,23 @@ h2 span {
 }
 
 .trends {
-  background: url('../images/trends-category.jpg');
+  background: url('assets/images/trends-category.jpg');
 }
 
 .glasses {
-  background: url('../images/glasses-category.jpg'); 
+  background: url('assets/images/glasses-category.jpg'); 
 }
 
 .sale {
-  background: url('../images/sale-category.jpg'); 
+  background: url('assets/images/sale-category.jpg'); 
 }
 
 .bags {
-  background: url('../images/bags-category.jpg');
+  background: url('assets/images/bags-category.jpg');
 }
 
 .womens {
-  background: url('../images/womens-category.jpg');
+  background: url('assets/images/womens-category.jpg');
 }
 
 .bx-viewport {
@@ -345,7 +343,7 @@ h2 span {
 .product-category {
   text-transform: uppercase;
   font-size: 0.8rem #969696;
-  padding-bottom: 1.03975rem;
+  padding-bottom: 1.25rem;
 }
 
 .product-name {
@@ -430,11 +428,6 @@ input[type="submit"]:focus {
   font: #FFF 'Playfair_Display', sans-serif;
   text-align: center;
   background-color: #242424;
-}
-
-.copyright {
-  padding: 4rem 0 1.5rem;
-  line-height: 1.5rem;
 }
 
 .phone-email {
