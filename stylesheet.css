@@ -4,34 +4,34 @@
 
 /* master.css */
 @import url("reset.css");
-@import url("global.css");  
+@import url("global.css");
 @import url("structure.css");
+    
 
-
-@font-face {
-    font-family: bold 'Playfair_Display';
-}    
     
 @font-face {
+    font-family: 'Playfair_Display';
     src: url('../fonts/playfairdisplay-bold-webfont.eot');
     src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
          url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'),
          url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
          url('../fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
-}    
-
-
+    font-weight: bold;;
+    font-style: normal;
+}
 
 @font-face {
+    font-family: 'Playfair_Display';
     src: url('../fonts/playfairdisplay-bolditalic-webfont.eot');
     src: url('../fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
          url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
          url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
          url('../fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 }
-
 
 @font-face {
     font-family: 'Playfair_Display';
@@ -43,21 +43,19 @@
          url('../fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
     font-weight: normal;
     font-style: italic;
-
 }
 
-
 @font-face {
-    font: 'Playfair_Display';
+    font-family: 'Playfair_Display';
     src: url('../fonts/playfairdisplay-regular-webfont.eot');
     src: url('../fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
          url('../fonts/playfairdisplay-regular-webfont.woff') format('woff'),
          url('../fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
          url('../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
-
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Raleway';
@@ -69,7 +67,6 @@
          url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -83,7 +80,6 @@
          url('../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
     font-weight: normal;
     font-style: italic;
-
 }
 
 
@@ -97,12 +93,10 @@
          url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
 
-
 @font-face {
-    font: 'Raleway';
+    font-family: 'Raleway';
     src: url('../fonts/raleway-mediumitalic-webfont.eot');
     src: url('../fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
@@ -111,17 +105,12 @@
          url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
     font-weight: bold;
     font-style: italic;
-
 }
-
 
 html {
   font-size: 16px(100.01%);
 }
 
-body {
-  font: #2d2d2d 'Raleway', sans-serif;;
-}
 
 /* for responsive scaling of images */
 img {
@@ -130,20 +119,10 @@ img {
   max-width: 100%;
 }
 
-.container {
-  padding: 0 2%;
-  width: 100%;
-}
-
-.screen-reader {
-  display: none;
-}
-
 /* works with the viewport meta tag*/
 @-ms-viewport {
   width: device-width;
 }
-
 
 h2 {
   font: 2.25rem 'Playfair_Display', sans-serif;
@@ -155,6 +134,57 @@ h2 {
 h2 span {
   font-weight: bold;
   font-style: normal;
+}
+
+/*Class Cascades*/
+
+.about {
+  text-align: center;
+  /*border-bottom: 0.1rem solid #d7d7d7;*/
+  padding: 3.0625rem 0 1.75rem;
+}
+
+.about h2 {
+  padding-bottom: 1.3125rem;
+}
+
+.about p {
+  font-size: 1.00625rem;
+  line-height: 2.1875rem;
+  padding-bottom: 1.3125rem;
+}
+
+.address {
+  line-height: 1.3125rem;
+  color: #969696;
+  padding-bottom: 2.625rem;
+}  
+
+.banner {
+  background:
+        linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+        url('../images/banner-girl.png') no-repeat center 4rem,
+        url('../images/flower-bkgd.jpg') repeat-x center top;
+  background-size: cover, 10rem 26rem, cover;
+  height: 28.5rem;
+  display: flex;
+}
+
+.banner-text {
+  align-self: center;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 1.575px 1.575px 3.15px rgba(90, 90, 90, 0.75);
+  width: 70%;
+}  
+
+.container {
+  padding: 0 2%;
+  width: 100%;
+}
+
+.screen-reader {
+  display: none;
 }
 
 .header {
@@ -202,51 +232,18 @@ h2 span {
 
 /*      <Banner Declarations>      */
 
-.banner {
-  background:
-        linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-        url('../images/banner-girl.png') no-repeat center 4rem,
-        url('../images/flower-bkgd.jpg') repeat-x center top;
-  background-size: cover, 10rem 26rem, cover;
-  height: 28.5rem;
-  display: flex;
-}
 
-.banner-text {
-  align-self: center;
-  text-align: center;
-  color: #FFF;
-  text-shadow: 1.8px 1.8px 3.6px rgba(90, 90, 90, 0.75);
-  width: 70%;
 }
 
 .collection {
-  font: bold 1.25rem'Raleway', sans-serif;
+  font: bold 1.09375rem'Raleway', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3123rem;
 }
 
 .seasons {
-  font-family: 2.5rem 'Playfair_Display', sans-serif;
+  font-family: 2.1875rem 'Playfair_Display', sans-serif;
 }
-
-
-.about {
-  text-align: center;
-  /*border-bottom: 0.1rem solid #d7d7d7;*/
-  padding: 3.5rem 0 2rem;
-}
-
-.about h2 {
-  padding-bottom: 1.5rem;
-}
-
-.about p {
-  font-size: 1.15rem;
-  line-height: 2.5rem;
-  padding-bottom: 1.5rem;
-}
-
 
 .category {
   display: flex;
@@ -281,7 +278,7 @@ h2 span {
 }
 
 .category-label-rect, .category-label-square {
-  font: 1.5rem bold;
+  font: 1.3125rem bold;
   text-transform: uppercase;
   align-self: center;
 }
@@ -348,11 +345,11 @@ h2 span {
 .product-category {
   text-transform: uppercase;
   font-size: 0.8rem #969696;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.03975rem;
 }
 
 .product-name {
-  font: 1.5rem #e2574c'Playfair_Display', sans-serif;
+  font: 1.3125rem #e2574c'Playfair_Display', sans-serif;
   padding-bottom: 1.25rem;
 }
 
@@ -367,7 +364,7 @@ h2 span {
   linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url('assets/images/wave-bkgd.jpg') no-repeat center bottom;
   color: #FFF;
-  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+  text-shadow: 1.75px 1.75px 3.5px rgba(100, 100, 100, 0.8);
   text-align: center;
   border-bottom: 0.5rem solid #FFF;
   padding: 3rem 0;
@@ -378,7 +375,7 @@ h2 span {
   padding: 2rem 0;
 }
 .sign-up p {
-  font-size: 1.15rem;
+  font-size: 1.00625rem;
   line-height: 2.5rem;
 }
 
@@ -430,10 +427,9 @@ input[type="submit"]:focus {
 
 
 .footer {
-  font-family: 'Playfair_Display', sans-serif;
+  font: #FFF 'Playfair_Display', sans-serif;
   text-align: center;
   background-color: #242424;
-  color: #FFF;
 }
 
 .copyright {
@@ -453,11 +449,6 @@ input[type="submit"]:focus {
   color: #b64036;
 }
 
-.address {
-  line-height: 1.5rem;
-  color: #969696;
-  padding-bottom: 3rem;
-}
 
 .social-media {
   padding-bottom: 4rem;
@@ -485,39 +476,14 @@ input[type="submit"]:focus {
 
 @media screen and (min-width: 600px) {
 
-
-  html {
-    font-size: 16px;
-  }
-
-  .container {
-    max-width: 600px;
-  }
-
-  .nav {
-    order: 1;
-    width: auto;
-    align-self: center;
-  }
-
-  .nav-menu a {
-    padding: 0 0.85rem;
-  }
-
-  .cart {
-    order: 3;
-  }
-
-
-  .seasons {
-    font-size: 2.85rem;
-  }
-
-
   .about-text {
     max-width: 720px;
   }
 
+  .aloha-info {
+   text-align: left;
+   padding-left: 1rem;
+  }
 
   .bx-clone {
     display: inline-block;
@@ -534,28 +500,45 @@ input[type="submit"]:focus {
 
   .category-square {
     flex-basis: 25%;
+  } 
+
+
+  .cart {
+    order: 3;
+  }    
+
+  .container {
+    max-width: 600px;
   }
-
-  .trends, .bags, .womens {
-    border: 4px solid #FFF;
-  }
-
-
-  .sign-up form {
-    width: 70%;
-  }
-
 
   .footer {
     display: flex;
     justify-content: space-between;
   }
 
-  .aloha-info {
-
-    text-align: left;
-    padding-left: 1rem;
+  .nav {
+    order: 1;
+    width: auto;
+    align-self: center;
   }
+
+  .nav a {
+    padding: 0 0.85rem;
+  }
+
+
+  .trends, .bags, .womens {
+    border: 4px solid #FFF;
+  }
+
+  .seasons {
+    font-size: 2.49375rem;
+  }
+
+  .sign-up form {
+    width: 70%;
+  }
+
 
   .social-media {
 
@@ -599,7 +582,7 @@ input[type="submit"]:focus {
   }
 
   .seasons {
-    font-size: 3.9rem;
+    font-size: 3.4125rem;
   }
 
 
