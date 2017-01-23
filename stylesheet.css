@@ -1,11 +1,4 @@
-
 * { margin:0; padding:0; border:0; }
-
-
-/* master.css */
-@import url("reset.css");
-@import url("global.css");
-@import url("structure.css");
     
 
     
@@ -108,7 +101,7 @@
 }
 
 html {
-  font-size: 16px(100.01%);/*16 pixels will render better on tablets and mobile*/
+  font-size: 16px;/*16 pixels will render better on tablets and mobile*/
 }
 
 h2 {
