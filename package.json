@@ -1,0 +1,26 @@
+{
+  "name": "raalohaproject01",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html> <html> <head> <meta charset=\"utf-8\"> \t<title>Aloha Apparel</title> \t<link href=\"https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Raleway:100,500,600,800\" rel=\"stylesheet\"> \t<link href=\"https://fonts.googleapis.com/css?family=Playfair+Display|/Raleway\" rel=\"stylesheet\"> \t<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheet.css\"> \t<link rel=\"stylesheet\" type=\"text/css\" href=\"reset.css\"> \t</head>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJ-B/ra-alohaproject01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KJ-B/ra-alohaproject01/issues"
+  },
+  "homepage": "https://github.com/KJ-B/ra-alohaproject01#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}
