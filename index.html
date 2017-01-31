@@ -22,7 +22,7 @@
         <img src="assets/images/aloha-logo.svg" alt="The logo for Aloha Apparel Co." />
       </div>
 
-      <nav class="nav-menu">
+      <nav class="nav-table">
         <a href="#about">About</a>
         <a href="#shop">Shop</a>
         <a href="#featured">Featured</a>
@@ -89,7 +89,7 @@
     <section class="products">
       <a id="featured"></a>
       <h2 class="heading-italics">Most-Loved <span class="heading-bold">Products</span></h2>
-      <ul class="products-list bxslider">
+      <ul class="bxslider products-list">
         <li>
           <img src="assets/images/stretch-knit-dress.jpg" alt="A short, black dress with white polka dots"/>
           <p class="product-category">Dresses</p>
@@ -223,14 +223,19 @@
       </div>
 
     </footer>
-    <script ></script>
+    
 		 <script src="jquery/jquery-1.8.1.js"></script>
 		<!-- bxSlider Javascript file -->
-		<script src="jquery/jquery.bxslider.js"></script>
+		<!-- <script src="jquery/jquery.bxslider.js"></script> -->
+    <script src="jquery/jquery.bxslider.min.js"></script>
   
 		<!-- bxSlider CSS file -->
-		<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" />
-
+		<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
   </body>
 </html>	
 
