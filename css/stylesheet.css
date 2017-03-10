@@ -67,8 +67,10 @@ h2 {
   font-style: italic;
   max-width: 1440px;
   text-align: center;
+}
 
-  
+div.sign-up-text.container {
+  width: 1340px;
 }
 
 h2 span {
@@ -92,6 +94,14 @@ img {
   width: device-width;
 }
 
+a Role{
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  color: white;  
+}
 /*Cascades Section I*/
 
 .about {
@@ -110,6 +120,7 @@ img {
   padding-bottom: 1.5rem;
   text-align: center;
   max-width: 1440px;
+  color: black;
 
 }
 
@@ -121,9 +132,9 @@ img {
 
 .banner {
   background:
-        linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-        url('banner-girl.png') no-repeat center 4rem,
-        url('flower-bkgd.jpg') repeat-x center top;
+  linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url('banner-girl.png') no-repeat center 4rem,
+  url('flower-bkgd.jpg') repeat-x center top;
   background-size: cover, 10rem 26rem, cover;
   height: 28.5rem;
   display: flex;
@@ -144,7 +155,7 @@ img {
 }
 
 .container {
-  padding: 0 2%;
+  padding: 1%;
   width: 100%;
 }
 
@@ -169,7 +180,7 @@ img {
 
 .category-rectangle {
   display: flex;
-  flex: 2 0 100%;
+  flex: 2 0 48%;
   max-width: 100%;
   border: 4px solid #FFF;
 }
@@ -177,7 +188,7 @@ img {
 .category-square {
   display: flex;
   flex: 1 0 100%;
-  max-width: 50%;
+  max-width: 24.45%;
   border: 4px solid #FFF;
 }
 
@@ -197,7 +208,7 @@ img {
 }
 
 .collection {
-  font: bold 1.09375rem'Raleway', sans-serif;
+  font: bold 2.5rem'Raleway', sans-serif;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
@@ -206,6 +217,10 @@ img {
 .copyright {
   padding: 4rem 0 1.5rem;
   line-height: 1.5rem;
+}
+
+header.header.container{
+  width: 100%;
 }
 
 .header {
@@ -234,6 +249,14 @@ img {
 }
 
 .nav a {
+  
+}
+
+.nav a:hover {
+  color: #b64036;
+}
+
+nav.nav-menu {
   text-transform: uppercase;
   text-decoration: none;
   color: #e2574c;
@@ -241,9 +264,6 @@ img {
   align-self: center;
 }
 
-.nav a:hover {
-  color: #b64036;
-}
 
 /*Cascades Section II (Sliders & Product Roll)*/
 
@@ -255,8 +275,9 @@ img {
   background:
         linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
         url: no-repeat center center;
-  		background-size: cover, cover;
+      background-size: cover, cover;
       text-align: center;
+      width: 100%;
 }
 
 .mens {
@@ -296,7 +317,6 @@ img {
   display: none;
 }
 
-
 .products {
   text-align: center;
   padding-bottom: 1rem;
@@ -313,18 +333,22 @@ img {
 
 .product-category {
   text-transform: uppercase;
+  text-align: center;
   font-size: 0.8rem #969696;
   padding-bottom: 1.25rem;
+  color: black;
 }
 
 .product-name {
   font: 1.3125rem #e2574c'Playfair_Display', sans-serif;
   padding-bottom: 1.25rem;
+  color: #b64036;
 }
 
 .product-price {
   font: bold #969696;
   padding-bottom: 3rem;
+  color: black;
 }
 
 
@@ -344,7 +368,7 @@ img {
   padding: 5px; 
 }
 .sign-up p {
-  font-size: 1.00625rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   max-width: 1440px;
   text-align: center;
@@ -444,7 +468,7 @@ input[type="submit"]:focus {
 @media screen and (min-width: 600px) {
 
   .about-text {
-    max-width: 720px;
+    max-width: 1440px;
   }
 
   .aloha-info {
@@ -462,7 +486,8 @@ input[type="submit"]:focus {
 
 
   .category-rectangle {
-    flex-basis: 45%;
+
+
   }
 
   .category-square {
@@ -475,7 +500,7 @@ input[type="submit"]:focus {
   }    
 
   .container {
-    max-width: 600px;
+    max-width: 1440px;
   }
 
   .footer {
@@ -524,7 +549,14 @@ input[type="submit"]:focus {
     padding-left: 1rem;
   }
 
-}
+  span.category-label-rect {
+    width: 100%;
+  }
+
+  span.category-label-square {
+    width: 100%;
+  }
+
 
 @media screen and (min-width: 1240px) {
 
@@ -536,6 +568,8 @@ input[type="submit"]:focus {
 
   .nav-menu a {
     padding: 0 2rem;
+    text-decoration: none;
+    color: #b64036;
   }
 
 
@@ -550,7 +584,7 @@ input[type="submit"]:focus {
   }
 
   .seasons {
-    font-size: 3.4125rem;
+    font-size: 5rem;
   }
 
 
@@ -565,7 +599,7 @@ input[type="submit"]:focus {
 
 
   .sign-up-text {
-    width: 1240px;
+    width: 1440px;
   }
 
 
