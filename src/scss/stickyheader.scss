@@ -1,0 +1,10 @@
+$header_pos = "static";
+	@function check_header_pos ($header_pos)
+		@if ($header_pos == "static") {
+		@return "stickyheader";
+		}@else{
+		@return "relative";
+		}
+
+	}
+			
