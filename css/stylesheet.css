@@ -138,6 +138,8 @@ p {
   background-size: cover, 10rem 26rem, cover;
   height: 28.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-text {
@@ -368,7 +370,7 @@ nav.nav-menu {
   padding: 5px; 
 }
 .sign-up p {
-  font-size: 1.5rem;
+  font: 1.5rem 'Roboto-Light', sans-serif;  
   line-height: 2.5rem;
   max-width: 1440px;
   text-align: center;
